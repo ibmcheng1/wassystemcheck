@@ -2,6 +2,8 @@
 
 ## WAS Cell Configuration backup file
 
+Note, this command only need to run on DMGR profile.
+
 cd <WAS_INSTALL>/profiles/<DMGR_PROFILE>/bin
 
 ./backupConfig.sh <APP>_DMGR_Config_<dDATE>.zip -nostop
@@ -15,6 +17,8 @@ cd /opt/ibm/websphere/AppServer/profiles/Dmgr01/bin
 Note, the output file will be in the location where the command is run, e.g. /opt/ibm/websphere/AppServer/profiles/Dmgr01/bin
 
 ## WAS Cell Configuration Properties
+
+Note, this command only need to run on DMGR profile.
 
 Use the command below to extract the configuration for an entire cell.
 ./wsadmin.sh <wasuser> -password <password> -lang jython
